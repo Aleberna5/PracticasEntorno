@@ -14,7 +14,7 @@ public class notas {
 	/**
 	 * Variables de las notas y los resultados.
 	 */
-	double uf1, uf2, uf3;
+	double tema1, uf2, uf3;
 	double acu1, acu2, acu3, def;
 	//utilizames ecaner para poder introducir datos
 	Scanner entrada = new Scanner(System.in);
@@ -35,7 +35,7 @@ public class notas {
 		
 		System.out.print("ingrese nota 1: ");
 		
-		uf1= entrada.nextDouble();
+		tema1= entrada.nextDouble();
 
 		
 		
@@ -60,7 +60,7 @@ public class notas {
 		 * @return verificacion si estan bien introducidos los parametros.
 		 */
 		
-		if (uf1>10) {
+		if (tema1>10) {
 			System.out.println(" nota1 mal introducida");
 			
 		}else {
@@ -92,7 +92,7 @@ public class notas {
 		/**
 		 * @return calculo de las notas.
 		 */
-		acu1= uf1*0.35;
+		acu1= tema1*0.35;
 		acu2 = uf2 * 0.35;
 		acu3 = uf3 * 0.30;
 		
@@ -113,7 +113,7 @@ public class notas {
 		 * @return mostrara por consola el calculo de las notas.
 		 */
 		System.out.println(" notas introducidas son:");
-		System.out.println(" nota1 = " + uf1);
+		System.out.println(" nota1 = " + tema1);
 		System.out.println(" nota2 = " + uf2);
 		System.out.println(" nota3 = " + uf3);
 		
